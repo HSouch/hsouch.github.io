@@ -1915,6 +1915,8 @@ button,
   #search form input[type="text"] {
     padding-right: 2.75em; }
 
+
+
 #sidebar {
   -moz-flex-grow: 0;
   -webkit-flex-grow: 0;
@@ -2198,9 +2200,9 @@ button,
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #3d4449;
+  color: #b2b3b4;
   font-family: "Roboto Slab", serif;
-  font-weight: 400;
+  font-weight: 800;
   letter-spacing: 0.075em;
   list-style: none;
   margin-bottom: 0;
@@ -2271,3 +2273,16 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+a.navigation-link {
+  padding: 0px 10px;
+  word-wrap: normal;
+  display: inline-block;
+
+  text-decoration: none;
+}
+
+a.navigation-link:link, a.navigation-link:hover, a.navigation-link:visited,
+a.navigation-link:link, a.navigation-link:active {
+  text-decoration: none;
+}

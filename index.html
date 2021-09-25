@@ -10,9 +10,12 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<script src="assets/jquery.min.js"></script>
+
+
 	</head>
 	<body class="is-preload">
-
 		<!-- Wrapper -->
 			<div id="wrapper">
 
@@ -20,15 +23,7 @@
 					<div id="main">
 						<div class="inner">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo">Harrison Souchereau </a>
-									<ul class="icons">
-										<li><a href="https://github.com/hsouch" class="icon brands fa-github"></a><span class="label"></span></li>
-										<li><a href="https://twitter.com/HSouch" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="https://www.instagram.com/h.souch/?hl=en" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									</ul>
-								</header>
+							<div id="nav-placeholder"></div>
 
 							<!-- Banner -->
 								<section id="banner">
@@ -38,11 +33,9 @@
 										</header>
 									</div>
 									<span class="image object">
-										<img src="images/banner_image.png" alt="" />
+										<img src="images/profpic.jpg" alt="" style="width:400px;" />
 									</span>
 								</section>
-
-
 						</div>
 					</div>
 
@@ -50,27 +43,8 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Home</a></li>
-										<li><a href="generic.html">Generic</a></li>
-										<li><a href="elements.html">Elements</a></li>
-										<li>
-											<span class="opener">Submenu</span>
-											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
-											</ul>
-										</li>
-									</ul>
-								</nav>
-
+							<!-- Load in sidebar menu -->
+							<div id="sidebarMenu-placeholder"></div>
 
 							<!-- Section -->
 								<section>
@@ -83,13 +57,17 @@
 											Yale University <br />
 											New Haven, Connecticut</li>
 									</ul>
+
+									<a class="navigation-link" href="CV___Harrison_Souchereau.pdf"
+									   style="text-decoration: none" target="_blank">C.V.</a>
+									<a class="navigation-link" href="https://orcid.org/0000-0001-5079-1865" target="_blank">ORCID</a>
+									<a class="navigation-link" href="https://ui.adsabs.harvard.edu/search/q=%20author%3A%22Harrison%20Souchereau%22&sort=date%20desc%2C%20bibcode%20desc&p_=0"
+									   target="_blank">ADS</a>
+
 								</section>
 
 							<!-- Footer -->
-								<footer id="footer">
-									<p class="copyright">&copy; Harrison Souchereau, All rights reserved. <br />
-										Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-								</footer>
+							<div id="sidebarFooter"></div>
 
 						</div>
 					</div>
@@ -102,6 +80,17 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				$(function(){
+					$("#nav-placeholder").load("assets/components/header.html");
+					$("#sidebarMenu-placeholder").load("sidebarMenu.html");
+					$("#sidebarFooter").load("assets/components/footer.html");
+
+				});
+			</script>
+
+
 
 	</body>
 </html>
