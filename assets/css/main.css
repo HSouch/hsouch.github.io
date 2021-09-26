@@ -111,8 +111,8 @@ a {
   -webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   -ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  border-bottom: dotted 1px;
-  color: #ffffff;
+  /*border-bottom: dotted 1px;*/
+  color: #75daf1;
   text-decoration: none; }
   a:hover {
     border-bottom-color: #ffffff;
@@ -121,8 +121,8 @@ a {
       color: inherit; }
 
 strong, b {
-  color: #3d4449;
-  font-weight: 600; }
+  color: #ffffff;
+  font-weight: bolder; }
 
 em, i {
   font-style: italic; }
