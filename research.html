@@ -39,47 +39,83 @@
 
 									<hr class="major" />
 
-									<div class="box">
-									<header>
-										<p>Surface Brightness Profiles</p>
-									</header>
-										<p>Hark! Hark! Triton. Hark! Bellow, bid our father the sea king. Rise from the
-											depths full foul in his fury. Black waves teeming with salt foam to smother
-											this young mouth with pungent slime. To choke ye. Engorging your
-											organs till ye turn blue and bloated with bilge and brine and can scream no
-											more. Only when he, crowned in cockle shells, with slithering tentacle tail,
-											and steaming beard take up his fell befinned arm, his coral tongued trident
-											screeches banshee-like in the tempest, and plunges right through your
-											gullet. Bursting ye. A bulging bladder no more, but a blasted bloody film
-											now a nothing for the harpies and the souls of dead sailors to pick and claw
-											and feed upon only to be lapped up and swallowed up by the infinite waters
-											of the dread emperor himself. Forgotten to any man, to any time. Forgotten
-											to any god or devil,
-											forgotten even to the sea. For any stuff or part of Winslow, even any
-											scantling of your soul is Winslow no more, but is now itself the sea.</p>
-									</div>
 
 									<div class="box">
+
 										<header>
-											<p><span class="image right"><img src="images/lowsb.png" alt="An example galaxy
-											in the classification pipeline." /></span> Low-SB Merging Features</p>
+											<p> Surface Brightness Profiles </p>
 
 										</header>
-										<p>
-											Galaxies that have undergone mergers often have characteristic structural elements, in particular high-frequency
-											features like streams or shells. Building a machine-learning program that can automatically detect these merging
-											features is of great interest to anyone studying galaxy evolution.
-										</p>
-										<p>
-											In 2019-2020 I worked with Ivana Damjanov, Ophélie Karishma Leste, and another undergrduate student to manually
-											classify thousands of these galaxies for the development of a detection algorithm, led by <a href="https://calderilla15.wixsite.com/helenadominguez">
-											Helena Dominguez Sanchez</a>. This development is onging.
-										</p>
 
-										<p style="text-align: right"> Pictured: An example galaxy in the classification pipeline, with associated
-											high-frequency filter applied. </p>
+										<div class="row gtr-200">
+											<div class="col-6 col-12-medium">
+												<p> Surface brightness profiles quantify the light of a galaxy as a function of
+													distance from its center. It has a vast multitide of uses, and a significant amount
+													of information about a galaxy's properties and overall structure can be gleaned from
+													even a simple 1-dimensional profile. </p>
 
+												<p> I have a lot of experience in the process of extracting profiles from large
+													populations of galaxies. My work has been applied to first the SHELS-F2 field, and
+													then COSMOS galaxies in both HSC (grizy) images, and CLAUDS (u,u*) images.
+													I have refined the 1D profile extraction algorithm in Photutils to better
+													handle masked pixels with minimal loss of computation time, and to
+													not immediately fail if a starting ellipse cannot be found. The extracted
+													profiles are being used by students at Saint Mary's University to understand more
+													about galaxy evolution at the population level. </p>
+
+												<p>
+													I have also worked on developing a simulation suite that quantifies
+													the amount of "usable profile" from an extraction, based on deviations
+													of observed profiles of galaxies generated with Sérsic profiles from
+													their "true" profiles. More info can be found on my <a href="code.html"> Code </a>
+													page.
+												</p>
+											</div>
+
+											<div class="col-6 col-12-medium">
+												<span style="align-content: center"><img src="images/example_cutouts.png" alt="An example galaxy
+											in the classification pipeline." style="width: 80%;"/></span>
+
+												<p> Above: A mock galaxy being added to a real background, masked, and the
+													resulting elliptical isophotes from profile extraction. </p>
+											</div>
+										</div>
 									</div>
+
+
+									<div class="box">
+
+										<header>
+											<p> Low-SB Merging Features </p>
+
+										</header>
+
+										<div class="row gtr-200">
+											<div class="col-6 col-12-medium">
+												<p>
+													Galaxies that have undergone mergers often have characteristic structural elements, in particular high-frequency
+													features like streams or shells. Building a machine-learning program that can automatically detect these merging
+													features is of great interest to anyone studying galaxy evolution.
+												</p>
+												<p>
+													In 2019-2020 I worked with Ivana Damjanov, Ophélie Karishma Leste (now at
+													the University of Victoria), and another undergraduate student to manually
+													classify thousands of SDSS galaxies for the development of a detection algorithm,
+													led by <a href="https://calderilla15.wixsite.com/helenadominguez">
+													Helena Domínguez Sánchez</a>. This development is onging.
+												</p>
+											</div>
+
+											<div class="col-6 col-12-medium">
+												<span style="align-content: center"><img src="images/lowsb.png" alt="Low SB
+												Features Classification pipeline." style="width: 80%;"/></span>
+
+												<p> Above: An example galaxy in the classification pipeline, with associated
+													high-frequency filter applied.  </p>
+											</div>
+										</div>
+									</div>
+
 
 									<hr class="major" />
 

@@ -38,65 +38,82 @@
 									<hr class="major" />
 
 									<div class="box">
-										<header>
-											<p>TBriDGE</p>
+										<header style="font-size: 25pt; padding: 0; margin: 0;">
+											<p >TBriDGE
+<!--												<a href="https://github.com/hsouch" class="icon brands fa-github" ></a>-->
+												<a href="https://pypi.org/project/tbridge/" class="icon brands fa-python"></a>
+											</p>
 										</header>
-										<p>Hark! Hark! Triton. Hark! Bellow, bid our father the sea king. Rise from the
-											depths full foul in his fury. Black waves teeming with salt foam to smother
-											this young mouth with pungent slime. To choke ye. Engorging your
-											organs till ye turn blue and bloated with bilge and brine and can scream no
-											more. Only when he, crowned in cockle shells, with slithering tentacle tail,
-											and steaming beard take up his fell befinned arm, his coral tongued trident
-											screeches banshee-like in the tempest, and plunges right through your
-											gullet. Bursting ye. A bulging bladder no more, but a blasted bloody film
-											now a nothing for the harpies and the souls of dead sailors to pick and claw
-											and feed upon only to be lapped up and swallowed up by the infinite waters
-											of the dread emperor himself. Forgotten to any man, to any time. Forgotten
-											to any god or devil,
-											forgotten even to the sea. For any stuff or part of Winslow, even any
-											scantling of your soul is Winslow no more, but is now itself the sea.</p>
+										<p style="padding-bottom: 0; margin: 0">
+											I am the lead developer for a python package that fulfills two
+											overall functions:
+											<ul >
+										<li> Refines the elliptical isophote analysis code in Photutils to extract
+										1D surface brightness profiles of galaxies. </li>
+										<li> Contains a testing suite to quantify the quality of extracted profiles
+											by adding simulated galaxies to real images and testing deviations.
+										</li>
+
+									</ul>
+										<b> TBriDGE </b> (Testing BRIghtness Deviations in Galaxy profile Extractions) is
+										particularly designed for any researchers looking to extract profiles for large
+										populations of galaxies, and check the reliability of the results depending on
+										structural parameters. It is designed with parallel computing in mind, and handles
+										masking and background subtraction.
+										</p>
+
+										<p>
+
+										I am happy to discuss additions and alterations to the code, and would be open to
+										collaborations on refinements and improvements.
+
+										(Code Paper in Prep)
+
+										</p>
 									</div>
 
 									<div class="box">
-										<header>
-											<p>Koe</p>
+										<header style="font-size: 25pt; padding: 0; margin: 0;">
+											<p>Cutout Creator <a href="https://github.com/HSouch/CutoutCreator" class="icon brands fa-github"></a> </p>
 										</header>
-										<p>Hark! Hark! Triton. Hark! Bellow, bid our father the sea king. Rise from the
-											depths full foul in his fury. Black waves teeming with salt foam to smother
-											this young mouth with pungent slime. To choke ye. Engorging your
-											organs till ye turn blue and bloated with bilge and brine and can scream no
-											more. Only when he, crowned in cockle shells, with slithering tentacle tail,
-											and steaming beard take up his fell befinned arm, his coral tongued trident
-											screeches banshee-like in the tempest, and plunges right through your
-											gullet. Bursting ye. A bulging bladder no more, but a blasted bloody film
-											now a nothing for the harpies and the souls of dead sailors to pick and claw
-											and feed upon only to be lapped up and swallowed up by the infinite waters
-											of the dread emperor himself. Forgotten to any man, to any time. Forgotten
-											to any god or devil,
-											forgotten even to the sea. For any stuff or part of Winslow, even any
-											scantling of your soul is Winslow no more, but is now itself the sea.</p>
+										<p>Cutout Creator is a very simple utility to rapidly obtain cutouts of objects
+											from a set of images, given a provided catalogue. The code also has
+											masking and (very rudimentary) SNR cutoff functionality.
+										</p>
 									</div>
+
 
 									<div class="box">
-										<header>
-											<p>CutoutCreator</p>
+										<header style="font-size: 25pt; padding: 0; margin: 0;">
+											<p >Helpful Snippets
+												<!--												<a href="https://github.com/hsouch" class="icon brands fa-github" ></a>-->
+												<a href="https://github.com/HSouch/HelpfulSnippets" class="icon brands fa-github"></a>
+											</p>
 										</header>
-										<p>Hark! Hark! Triton. Hark! Bellow, bid our father the sea king. Rise from the
-											depths full foul in his fury. Black waves teeming with salt foam to smother
-											this young mouth with pungent slime. To choke ye. Engorging your
-											organs till ye turn blue and bloated with bilge and brine and can scream no
-											more. Only when he, crowned in cockle shells, with slithering tentacle tail,
-											and steaming beard take up his fell befinned arm, his coral tongued trident
-											screeches banshee-like in the tempest, and plunges right through your
-											gullet. Bursting ye. A bulging bladder no more, but a blasted bloody film
-											now a nothing for the harpies and the souls of dead sailors to pick and claw
-											and feed upon only to be lapped up and swallowed up by the infinite waters
-											of the dread emperor himself. Forgotten to any man, to any time. Forgotten
-											to any god or devil,
-											forgotten even to the sea. For any stuff or part of Winslow, even any
-											scantling of your soul is Winslow no more, but is now itself the sea.</p>
-									</div>
+										<p style="padding-bottom: 0; margin: 0">
+											This is a collection of convenience programs and code-snippets
+											that I developed to make my life working with astronomical data just a
+											little bit easier.
+										<ul>
+											<li> <b> Simple Image Tester</b> Checks if there are any corrupted FITS
+											files in a directory by running a simple open/close check. </li>
+											<li> <b>FITS Compiler</b> Compiles a bunch of FITS files into  a single large
+											HDUList. (Beware ye with low available RAM). </li>
+											<li> <b> Coverage Getter </b> Returns a table containing the coverage information
+											 for a set of images, based on RA/DEC information. </li>
+											<li> <b> Cutout Viewer </b> Generates a visualization of a set of cutouts.
+											Works well with the output from CutoutCreator. Similar functionality is also
+											available in the tbridge.plotting subpackage. </li>
+											<li> <b> Command Line Args Template </b> Many times I've wanted to rapidly
+											create a python program that can be run from the command line with optional
+											user arguments. This is a template that allows me to get started fast. </li>
+											<li> <b>TBriDGE Command Line Wrapper </b> This is a command line wrapper to
+											allow the user to operate TBriDGE from the command line with as few issues
+											as possible. This allows for easy configuration to customize simulations. </li>
 
+										</ul>
+
+									</div>
 
 								</section>
 
