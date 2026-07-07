@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+</head>
+
+<body>
+    <div id="app">
+
+        <main>
+
+            <div data-component="container">
+            
+                <div data-component="top">
+
+                    <h1 data-component="title"> <a href="../index.html"> Research </a></h1>
+
+                </div>
+                
+
+                <div data-component="content">
+
+                    <div data-component="link-splash">
+                        <ul class="references">
+                            <li><a href="#ram-pressure-stripping">Ram Pressure Stripping</a></li>
+                            <li><a href="#simulations">Hydrodynamical Simulations</a></li>
+                            <li><a href="#surface-brightness-profiles">Surface Brightness Profiles</a></li>
+                        </ul>
+                    </div>
+
+                    <div data-component="link-splash">
+                        <ul class="references">
+                            <li><a href="#publications"><h1>My Publications</h1></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div data-component="bordered-post">
+                    <div data-component="non-bordered-post">
+                        <p> 
+                            My primary interests in research include galaxy evolution and morpholgy,
+                            exploring and interpreting large datasets, and interesting astrophysical phenomena,
+                            such as the ram pressure stripping of galaxies.
+                        </p>
+                    </div>
+
+                    <div data-component="non-bordered-post" id="ram-pressure-stripping">
+                        <h1> Ram Pressure Stripping</h1>
+
+                        <div data-component="image-row">
+                            
+                            <div data-component="text">
+                            <p> Galaxies traveling through a galaxy cluster will experience <i>ram pressure</i> as they 
+                                pass through the intracluster medium. Being that a galaxy is made up of a multi-component 
+                                medium (including stars, gas, dust, and dark matter), these different components will be 
+                                affected differently. Stars feel effectively no pressure, but gaseous components, being 
+                                more diffuse in nature, can be accelerated away from the galaxy disk. In strong cases, 
+                                this manifests as a stripped gas tail behind a galaxy, which can sometimes be a site of 
+                                star formation. The most extreme examples are often deemed "jellyfish galaxies". 
+                            </p>
+                            </div>
+                        
+                        <div data-component="image">
+                                <img src="../assets/images/NGC4858.png" alt="Ram Pressure Stripping">
+                            </div>
+
+
+                        </div>
+
+						<p> 
+                            This process can be studied with a number of different tracers, but molecular 
+                            gas, traced by CO(2-1) emission, is my key focus. My data is from the ALMA-JELLY large 
+                            program, which provides structural and kinematic information for galaxies experiencing 
+                            extreme RPS. My focus is on galaxies in the Coma cluster, located over 200 million light 
+                            years away. 
+                        </p>
+
+						<p>
+							Ram pressure stripping is an effect on many different mass scales, including dwarf 
+                            galaxies passing through the CGM of a host galaxy. By studying the most extreme examples 
+                            of RPS, we can gain insight into the process on scales where observing and studying the 
+                            effects are more challenging, especially in lower mass targets.
+						</p>
+
+                    </div>
+
+
+                    <div data-component="non-bordered-post" id="simulations">
+                        <h1> Hydrodynamical Simulations </h1>
+
+                        <div data-component="image-row">
+                            
+                            <div data-component="text">
+                            <p> 
+                                Through my work as a predoctoral fellow at the CCA and beyond, I have run and interpreted
+                            hydrodynamical simulations (primarily using the Enzo Adaptive Mesh Refinement code).
+                            These wind-tunnel simulations have allowed me to study the morphology and dynamics of gas 
+                            in ram pressure stripped galaxies.
+                            </p>
+                            </div>
+                        
+                        <div data-component="image">
+                                <img src="../assets/images/windtunnelsim.png" alt="Gas in a snapshot of a wind tunnel
+                                simulations">
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                    
+
+                    <div data-component="non-bordered-post" id="surface-brightness-profiles">
+                        <h1> Surface Brightness Profiles</h1>
+                        
+                        <p> Surface brightness profiles quantify the light of a galaxy as a function of
+                            distance from its center. It has a vast multitide of uses, and a significant amount
+                            of information about a galaxy's properties and overall structure can be gleaned from
+                            even a simple 1-dimensional profile. </p>
+
+                        <p> I have a lot of experience in the process of extracting profiles from large
+                            populations of galaxies. My work has been applied to first the SHELS-F2 field, and
+                            then COSMOS galaxies in both HSC (grizy) images, and CLAUDS (u,u*) images.
+                            I have refined the 1D profile extraction algorithm in Photutils to better
+                            handle masked pixels with minimal loss of computation efficiency, and to
+                            not immediately fail if a starting ellipse cannot be found. The extracted
+                            profiles are being used by students at Saint Mary's University to understand more
+                            about galaxy evolution at the population level. </p>
+
+                        <p>
+                            I have also worked on developing a simulation suite that quantifies
+                            the amount of "usable profile" from an extraction, based on deviations
+                            of observed profiles of galaxies generated with Sérsic profiles from
+                            their "true" profiles. More info can be found on my <a href="code.html"> Code </a>
+                            page.
+                        </p>
+
+                    </div>
+                    </div>  
+                    
+                    <div data-component="bordered-post" id="publications">
+                    
+                        <div>
+                            <h1> As First-Author</h1>
+
+                            <ol reversed>
+                                <li>
+                                    <a> Souchereau, H., et al. </a>
+                                    <a href="" target="_blank">
+                                        Up, Up, and Away? Quantifying ISM Fallback using Ram Pressure Stripping Simulations
+                                     </a>
+                                    <a> ApJ, Submitted </a>
+                                </li>
+
+                                <li>
+                                    <a> Souchereau, H., et al. </a>
+                                    <a href="" target="_blank">
+                                        GalPRIME: Automated Quality-Assessed 1-D Light Profile Extraction for Large Galaxy Surveys
+                                     </a>
+                                    <a> ApJ, Submitted </a>
+                                </li>
+                                
+                                <li>
+                                    <a> Souchereau, H., et al. </a>
+                                    <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...988...72S/abstract" target="_blank">
+                                    ALMA-JELLY I: High Resolution CO(2─1) Observations of Ongoing Ram Pressure 
+                                    Stripping in NGC 4858 Reveal Asymmetrical Gas Tail Formation and Fallback </a>
+                                    <a> ApJ, Published July 2025 </a>
+                                </li>
+
+                            </ol>
+                        </div>
+
+                        <div> 
+                            <h1> As Co-Author</h1>
+                            
+                            <ol reversed>
+                                <li>
+                                    <a> Williams, D., et al. </a>
+                                    <a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260416792W/abstract" target="_blank">
+                                    The Role of Cluster Environments in Quiescent Galaxy Stellar Halo Assembly </a>
+                                    <a> ,Submitted </a>
+                                </li>
+
+                                <li>
+                                    <a> Keim, M., et al. </a>
+                                    <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...988..165K/abstract" target="_blank">
+                                     Kinematic Confirmation of a Remarkable Linear Trail of Galaxies in the NGC 1052 
+                                     Field, Consistent with Formation in a High-speed Bullet Dwarf Collision   </a>
+                                    <a> ,ApJ, Published August 2025 </a>
+                                </li>
+
+                                <li>
+                                    <a> Williams, D., et al. </a>
+                                    <a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...989..107W/abstract" target="_blank">
+                                     The Growth of Galaxy Stellar Haloes over 0.2 ≤ z ≤ 1.1  </a>
+                                    <a> ,ApJ, Published August 2025 </a>
+                                </li>
+                                
+                                <li>
+                                    <a> Dominguez Sanchez, H., et al. </a>
+                                    <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.521.3861D/abstract" target="_blank">
+                                      Identification of tidal features in deep optical galaxy images with 
+                                      convolutional neural networks   </a>
+                                    <a> ,MNRAS, Published May 2023 </a>
+                                </li>
+                                
+                                <li>
+                                    <a> Damjanov, I., et al. </a>
+                                    <a href="https://ui.adsabs.harvard.edu/abs/2019ApJ...872...91D/abstract" target="_blank">
+                                      Quiescent Galaxy Size and Spectroscopic Evolution: Combining HSC Imaging and 
+                                      Hectospec Spectroscopy  </a>
+                                    <a> ,ApJ, Published February 2019 </a>
+                                </li>
+
+                            </ol>
+
+
+                        </div>
+
+                    </div>
+
+                
+                
+                
+                </div>
+                
+
+            </div>
+
+
+        </main>
+    
+    </div>
+
+</body>
+</html>

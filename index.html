@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Souchereau</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+
+        <main>
+            
+            <canvas id="background-canvas"></canvas>
+
+            <div data-component="container">
+
+                <div data-component="top">
+                    <h1 data-component="title"> <a href="index.html"> Harrison Souchereau </a></h1>
+
+                    <nav data-component="nav">
+                        <ul>
+                            <li><a href="pages/about.html">About</a></li>
+                            <li><a href="pages/research.html">Research</a></li>
+                            <li><a href="pages/code.html">Code</a></li>
+                            <!-- <li> <a href="pages/blog.html"> Blog </a></li> -->
+                            <li><a href="pages/leda.html">LEDA</a></li>
+                            <li><a href="pages/contact.html">Contact</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+                
+                
+                <div data-component="content">
+
+                    <div data-component="link-splash">
+                        <ul class="icons">
+                            <li><a href="https://github.com/hsouch" target="_blank">GitHub</a></li>
+                            <li><a href="https://codeberg.org/HSouch" target="_blank">Codeberg</a></li>
+                            <li><a href="https://www.linkedin.com/in/hsouchereau/" target="_blank">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div data-component="bordered-post">
+                    <div data-component="splash">
+                        <div data-component="splash-column">
+                            <p>
+                                I am a 5th year astronomy PhD candidate at Yale University,  working
+                                with professor Jeff Kenney on ram pressure stripping of galaxies in the Coma cluster.
+
+                                In the spring of 2024, I worked at the Centre for Computational Astrophysics in NYC 
+                                with Dr. Stephanie Tonnesen as a predoctoral fellow.
+
+                            </p>    
+
+                            <p>
+                                My research interests are focused on ram-pressure stripping in galaxy clusters. 
+                                Galaxies experiencing such a process are having their gaseous material stripped away, 
+                                often manifesting as intricate and beautiful stripped tails. In certain examples, 
+                                these tails will be visible in optical wavelengths, indicative of undergoing star 
+                                formation. 
+                                Understanding how these galaxies evolve will provide clues into galaxy evolution 
+                                on many different mass scales. 
+                            </p>
+
+                        </div>
+
+                        <div data-component="splash-column">
+
+                            <img src="assets/images/profile_image.png" alt="Test Image" width="75%">
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div data-component="non-bordered-post">
+                        <p> 
+                                I am also interested in computer science and programming as a practice. 
+                                I am opposed to the concerning over-reliance of AI in programming and research pursuits.
+                                While most of my research has been performed using Python, I find that Rust matches my
+                                programming style more closely, and have since been building Rust-based projects.
+                            </p>
+                            
+                            <p>
+                                I DJ under the name "LEDA" (yes, after the Galaxy Survey), with my main genres ranging
+                                from progressive house to industrial techno. Get in touch if you want me to hire me for
+                                an event.
+                            </p>
+
+                    </div>
+                    </div>
+
+
+
+                    <div data-component="non-bordered-post">
+                        <p>
+                            Copyright © 2026 Harrison Souchereau
+                        </p>
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+            
+
+        </main>
+
+    
+    </div>
+
+    <script src="draw_bg.js"></script>
+
+</body>
+
+    
+
+</html>

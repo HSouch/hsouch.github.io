@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harrison Souchereau</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    
+</head>
+
+<body>
+    <div id="app">
+
+        <main>
+
+            <div data-component="container">
+            
+            
+
+                <div data-component="top">
+
+                    <h1 data-component="title"> <a href="../index.html"> Code Projects </a></h1>
+
+                </div>
+                
+
+                <div data-component="content">
+                    
+                    <div data-component="link-splash">
+                        <ul class="references">
+                            <li><a href="#galarp">GalaRP</a></li>
+                            <li><a href="#simulations">GalPRIME</a></li>
+                            <li><a href="#cubespa">CUBESPA</a></li>
+                        </ul>
+                    </div>
+
+                
+                    <div data-component="bordered-post">
+
+                        <div data-component="non-bordered-post" id="galarp">
+                            <a href="https://galarp.readthedocs.io/en/latest/"><h1> GalaRP </h1> </a>
+
+                            <div data-component="image-row">
+                                
+                                <div data-component="text">
+                                <p> 
+                                    GalaRP (Gala + Ram Pressure) is an altered version of Adrian Price-Whelan's Gala 
+                                    code to handle non-conservative forces, particularly those in a ram pressure event. 
+                                    This code is ideally suited for determining overall initial conditions for 
+                                    hydrodynamic wind-tunnel simulations, 
+                                    but can do a good job at showing the overall gravitational effects (assuming a 
+                                    Gunn and Gott model for acceleration). 
+                                </p>
+                                </div>
+                            
+                            <div data-component="image">
+                                    <img src="../assets/images/Galarp-Logo.png" alt="Ram Pressure Stripping">
+                                </div>
+                            </div>
+
+                            <div data-component="non-bordered-post">
+                                <p> 
+                                    I am currently in the process of porting GalaRP over to Rust, which I feel will 
+                                    allow for faster runtime calculations.
+                                </p>
+                            </div>
+
+                        </div>
+                        
+                        
+                        <div data-component="non-bordered-post" id="galprime">
+                            <a href="https://galprime.readthedocs.io/en/latest/"><h1> GalPRIME </h1> </a>
+
+                            <div data-component="image-row">
+                                
+                                <div data-component="text">
+                                <p> 
+                                    I am the lead developer for GalPRIME: a pipeline that fulfills two overall 
+                                    functions: 
+                                    <ul>
+                                        <li> 
+                                            Refines the elliptical isophote analysis code in Photutils to 
+                                            extract 1D surface brightness profiles of galaxies.
+                                        </li>
+                                        <li> 
+                                            Contains a testing suite to quantify the quality of 
+                                            extracted profiles by adding 
+                                            simulated galaxies to real images and testing deviations.
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    This pipeline is designed to extract profiles for large populations of 
+                                    galaxies, and check the reliability of the results depending on structural 
+                                    parameters. It is designed with parallel computing in mind, and handles masking 
+                                    and background subtraction.
+                                </p>
+                                <p>
+                                    I am happy to discuss additions and alterations to the code, and would be open to 
+                                    collaborations on refinements and improvements. (Code Paper Submitted to ApJ) 
+                                </p>
+                                </div>
+                            
+                                <div data-component="image">
+                                    <img src="../assets/images/gprime_logo.png" alt="GalPRIME Logo">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
+
+                        <div data-component="non-bordered-post" id="cubespa">
+                            <h1> CUBESPA </h1>
+
+                            <div data-component="image-row">
+                                
+                                <div data-component="text">
+                                <p> 
+                                     CubeSPA (Cube SPectral Analysis) is a fully-featured suite to analyze, explore, 
+                                     and process datacubes, with a focus on cubes from radio astronomy. It is designed 
+                                     to simplify the process of analyzing and plotting information on datacubes. 
+                                     Almost all of the plots in my upcoming papers on ALMA-JELLY-related galaxies 
+                                     are generated using CubeSPA.
+
+                                    I am open to suggestions and collaborations on this code, and would be happy to 
+                                    hear any features that you would like to see added. The best way to do this 
+                                    through pull requests or issues on the linked Github page. 
+                                </p>
+                                </div>
+                            
+                                <div data-component="image">
+                                    <!-- <img src="../assets/images/Galarp-Logo.png" alt="Ram Pressure Stripping"> -->
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </main>
+    
+    </div>
+
+</body>
+</html>

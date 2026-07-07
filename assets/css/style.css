@@ -1,0 +1,219 @@
+
+:root {
+    --background-color: rgba(20, 20, 20, 1);
+    --container_color: rgba(30, 30, 30, 1);
+    --border-color: rgba(200, 200, 200, 1);
+
+
+    --text-color: rgba(255, 255, 255, 1);
+    --link-color: rgb(190, 199, 210);
+
+    --font-mono: "Berkeley Mono", "IBM Plex Mono", ui-monospace, "Liberation Mono", "Courier New", monospace;
+    --font-sans: var(--font-mono);
+
+    --lr_padding: 20px;
+    --nav_gap: 40px;
+}
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    position: relative;
+    background-color: var(--background-color);
+}
+
+img {max-width:100%;}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-sans);
+
+    padding-bottom: 5rem;
+    font-size: 16px;
+    color: var(--text-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+a:link {
+    color: var(--link-color);
+}
+
+
+/* Background canvas */
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+
+/* Title and nav bar */
+
+[data-component="container"] {
+    position: relative;
+    z-index: 1;
+    min-width: 15rem;
+    max-width: 60rem;
+    margin: 0 auto;
+    background-color: var(--container_color);
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 0px var(--lr_padding);
+}
+
+[data-component="top"] {
+    height: 100px;
+    min-height: 100px;
+
+    padding: 0px var(--lr_padding);
+
+    position: sticky;
+    top: 0;
+    background-color: var(--container_color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid var(--border-color);
+
+
+    z-index: 10;
+}
+
+[data-component="title"] a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+[data-component="title"] a:hover {
+    text-decoration: underline;
+}
+
+
+[data-component="nav"] {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--nav_gap);
+}
+
+[data-component="nav"] ul {
+    display: flex;
+
+    gap: var(--nav_gap);
+}
+
+[data-component="nav"] li {
+    display: inline-block;
+}
+
+[data-component="nav"] a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+[data-component="nav"] a:hover {
+    text-decoration: underline;
+}
+
+
+/* Link Splash component */
+[data-component="link-splash"] {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+[data-component="link-splash"] ul {
+    display: flex;
+    gap: var(--nav_gap);
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+[data-component="link-splash"] li {
+    display: inline-block;
+}
+
+[data-component="link-splash"] a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+[data-component="link-splash"] a:hover {
+    text-decoration: underline;
+}
+
+
+/* Bio Splash component */
+[data-component="splash"] {
+    display: flex;
+    align-items: flex-start;
+    
+    border: 0px solid var(--border-color);
+
+}
+
+[data-component="splash-column"] {
+    flex: 1;
+    min-width: 0;
+    padding: var(--lr_padding) var(--lr_padding);
+    align-items: flex-start;
+    
+}
+
+
+/* Post component */
+[data-component="bordered-post"] {
+    border: 1px solid var(--border-color);
+    padding: 10px calc(var(--lr_padding) * 2);
+    margin: 10px 0;
+    scroll-margin-top: 100px;
+}
+
+[data-component="non-bordered-post"] {
+    padding: 0px calc(var(--lr_padding));
+    margin: 10px 0;
+
+    scroll-margin-top: 100px;
+}
+
+[data-component="bordered-post"] li {
+    padding-left: 5px;
+    padding-bottom: 10px;
+}
+
+
+/* Image and text component */
+[data-component="image-row"] {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--lr_padding);
+    border: none
+}
+
+[data-component="image-row"] [data-component="text"] {
+    flex: 2;
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+
+[data-component="image-row"] [data-component="image"] {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
