@@ -8,7 +8,9 @@
     --text-color: rgba(255, 255, 255, 1);
     --link-color: rgb(190, 199, 210);
 
-    --font-mono: "Berkeley Mono", "IBM Plex Mono", ui-monospace, "Liberation Mono", "Courier New", monospace;
+    --font-mono:   ui-monospace, "Liberation Mono", "Courier New", monospace;
+    --font-ss:     Helvetica, sans-serif;
+    
     --font-sans: var(--font-mono);
 
     --lr_padding: 20px;
@@ -100,6 +102,14 @@ a:link {
     text-decoration: underline;
 }
 
+[data-component="back"] a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+[data-component="back"] a:hover {
+    text-decoration: underline;
+}
+
 
 [data-component="nav"] {
     display: flex;
@@ -121,6 +131,7 @@ a:link {
 [data-component="nav"] a {
     color: var(--link-color);
     text-decoration: none;
+    
 }
 
 [data-component="nav"] a:hover {
