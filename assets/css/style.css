@@ -7,6 +7,7 @@
 
     --text-color: rgba(255, 255, 255, 1);
     --link-color: rgb(190, 199, 210);
+    --subdued-color: rgba(150, 150, 150, 1);
 
     --font-mono:   ui-monospace, "Liberation Mono", "Courier New", monospace;
     --font-ss:     Helvetica, sans-serif;
@@ -230,6 +231,19 @@ a:link {
     max-width: 100%;
     height: auto;
 }
+
+
+
+[data-component="legal-and-version"] {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: var(--subdued-color);
+}
+
+
+
+
 
 /* Responsive styles for small screens */
  @media (max-width: 600px) {
