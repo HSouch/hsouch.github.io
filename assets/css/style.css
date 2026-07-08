@@ -246,7 +246,7 @@ a:link {
 
 
 /* Responsive styles for small screens */
- @media (max-width: 600px) {
+ @media (max-width: 720px) {
     [data-component="top"] {
         min-height: 120px;
         padding-top: 2rem;
@@ -266,9 +266,27 @@ a:link {
         padding-top: 2rem;
         gap: 10px;
         min-height: 2rem;
+        display: flex;
+        justify-content: center;
     }
 
     [data-component="splash"] {
-        flex-direction: column;
+        flex-direction: column-reverse;
+
+    }
+
+    [data-component="image-row"] {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    [data-component="bordered-post"] {
+        padding: 0px 10px;
+        text-align: center;
+    }
+
+    [data-component="non-bordered-post"] {
+        padding: 0px 10px;
+        text-align: center;
     }
 }
