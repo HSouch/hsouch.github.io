@@ -249,6 +249,7 @@ a:link {
  @media (max-width: 600px) {
     [data-component="top"] {
         min-height: 120px;
+        padding-top: 2rem;
         padding-bottom: 2rem;
     }
     
